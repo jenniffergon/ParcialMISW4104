@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { CafesComponent } from './cafes/cafes.component';
@@ -6,6 +7,9 @@ import { CafesListComponent } from './cafes/cafes-list/cafes-list.component';
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
+      imports: [
+      HttpClientModule
+    ],
       declarations: [
         AppComponent, CafesComponent, CafesListComponent
       ],
