@@ -1,10 +1,33 @@
-<p>
-  cafes-list works!
-</p>
-<div class="container-fluid">
-  <div class="row">
-      <div class="col mb-2" *ngFor="let book of cafe">
-         {{book.nombre}}
-      </div>
-  </div>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inter&display=swap" rel="stylesheet">
+
+<div class="container">
+  <h1>El aroma mágico</h1>
+
+  <hr/>
+  <img class="img-cafe" src="../../../assets/img/image 1.png" alt="">
+  <hr/>
+
+  <table class="table">
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Tipo</th>
+        <th scope="col">Región</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let cafe of cafe">
+        <th scope="row">{{cafe.id}}</th>
+        <td>{{cafe.nombre}}</td>
+        <td>{{cafe.tipo}}</td>
+        <td>{{cafe.region}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="text-center footer-contact">Contact us: +57 3102105253 - info@elaromamagico.com - @elaromamagico</p>
+
 </div>

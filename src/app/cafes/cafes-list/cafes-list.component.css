@@ -1,0 +1,29 @@
+h1{
+  font-family: 'Indie Flower', cursive;
+  font-size: 36px;
+}
+
+.container{
+  margin-top: 20px;
+}
+
+p{
+  font-family: 'Inter', sans-serif;
+}
+
+.img-cafe{
+  width: 100%;
+}
+
+.table{
+  width: 65%;
+}
+
+.table>thead{
+ background-color: #333A40;
+ color: white;
+}
+
+.footer-contact{
+  margin-top: 50px;
+}
