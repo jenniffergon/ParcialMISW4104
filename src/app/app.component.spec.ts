@@ -1,11 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { CafesComponent } from './cafes/cafes.component';
+import { CafesListComponent } from './cafes/cafes-list/cafes-list.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent, CafesComponent, CafesListComponent
       ],
     }).compileComponents();
   });
